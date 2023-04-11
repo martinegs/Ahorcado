@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego Ahorcado</title>
+    <link rel="stylesheet" href="css/styles.css">
+    
+</head>
+<body class="color">
+    
+    <div class="contenedor">
+        <div class="adivinar">
+            <h1>Juego del Ahorcado</h1>
+            <h4>Adivina la palabra!</h4>
+            <div id="tablero"></div>
+            <br/>
+            <br/>
+            <br/>
+            <h4>Ingresa una letra...</h4>
+         
+            <div class="casillaIngreso">            
+                <input type="text" name="nombre" maxlength="1" />
+            </div>
+            <br/>
+            <br/>
+            <br/>
+            <div id="status"></div>
+            <p id="intentos"></p>
+            <p id="resultado"></p>
+            <div id="jugarDeNuevo"></div>
+        </div>
+       
+    </div>
+    <div class="dibujo">
+        <img id="imagen" src="img/6.png">
+    </div>
+</body>
+</html>
+
+<script src="js/script.js"></script>
