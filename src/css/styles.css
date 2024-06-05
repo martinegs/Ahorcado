@@ -1,14 +1,18 @@
-
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
   
   body {
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    color: rgb(233, 212, 212);
-    background-image: url(https://th.bing.com/th/id/OIP.bLeguF2Ne0_zpXeh9MQeFwHaFj?pid=ImgDet&rs=1); background-size: cover; 
+    font-family: sans-serif;
+    background-color: beige;
     margin: 0;
     padding: 0;
-    text-align: center;
-
-    
   }
 
 .contenedor{
@@ -28,5 +32,4 @@
 .dibujo img{
   width: 300px;
   height: auto;
-
 }
