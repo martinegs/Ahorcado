@@ -10,7 +10,7 @@ creaTablero(palabrAdivinar);
   letra.oninput = function () {
     let ganastePerdiste = document.getElementById("resultado");
 
-    if (ganastePerdiste.innerHTML === "") {
+    if (ganastePerdiste.innerHTML === "") {//para que el jugador si ganó o perdió no siga jugando
       if (soloLetras(letra.value)) {
         mostrarTablero(letra.value);
         buscarCoincidencia(letra.value);
@@ -59,7 +59,7 @@ function creaTablero(arrPalabra) {
 }
 
 function soloLetras(cadena) {
-  const pattern = new RegExp("[a-zA-Z]"); 
+  const pattern = new RegExp("[a-zA-Z]"); //patrón que solo permite letras
   console.log(pattern.test(cadena));
 
   if (!pattern.test(cadena)) {
